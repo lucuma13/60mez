@@ -24,9 +24,14 @@ jobs:
       - name: Build Go60 combined firmware
         run: nix-build config -o combined
       - name: Copy result out of nix store
-        run: cp combined/go60.uf2 go60.uf2
+#       run: cp combined/go60.uf2 go60.uf2  #this was the original command
+        run: |
+          # Extract all generated UF2 files to isolate the halves if needed
+          if [ -d combined ]; then
+            cp -v combined/*.uf2 . 2>/dev/null || cp -v combined/go60.uf2 .
+          fi
       - name: Upload result
         uses: actions/upload-artifact@v7
         with:
-          name: go60.uf2
-          path: go60.uf2
+          name: go60-firmware
+          path: "*.uf2"
