@@ -1,6 +1,6 @@
-# 60mez - custom layout for Moergo Go60 keyboard, designed for a smooth transition for macOS traditional keyboard users
+# 60mez - custom layout for Moergo Go60 keyboard
 
-This repo offers a ZMK configuration of the MoErgo Go60 wireless split keyboard. It includes per-key RGB underglow for visual help.
+This repo offers a ZMK configuration of the MoErgo Go60 wireless split keyboard. It is a custom layout designed for a smooth transition for macOS traditional keyboard users, and it includes per-key RGB underglow for visual help (PR36 community firmware)
 
 The layout has 5 layers:
 - Layer 0 (Base Layer): The alphas and numbers and base symbols
@@ -13,7 +13,7 @@ To switch to Layer 1 (Keypad Layer), you can hold down RH T2 to temporarily swit
 To switch to Layer 2 (SymbolNav Layer), you can hold down LH T2 to temporarily switch into Layer 2, or double tap to persistently switch into Layer 2. You can single tap LH T2 to get back to the Layer 0 (Base Layer), or press LH C1R1.
 
 
-## Resources
+## 📂 Resources
 
 If you are looking to dig deeper into ZMK and develop new functionality, it is recommended to follow the steps of installing ZMK as found on the official ZMK documentation site (linked below).
 
@@ -23,7 +23,7 @@ If you are looking to dig deeper into ZMK and develop new functionality, it is r
 - The [official ZMK Documentation](https://zmk.dev/docs) web site. Find the answers to many of your questions about ZMK Firmware.
 - The [official ZMK Discord Server](https://discord.gg/8cfMkQksSB). Instant conversations with other ZMK developers and users. Great technical resource!
 
-- The [official MoErgo ZMK Distribution](https://github.com/moergo-sc/zmk). Repository for ZMK firmware customized for Go60 and Glove80.
+- The [official MoErgo ZMK Distribution](https://github.com/moergo-sc/zmk). Repository for ZMK firmware customized for Go60.
 
 ## 🚀 Getting started
 
