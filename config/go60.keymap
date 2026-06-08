@@ -156,11 +156,6 @@
 #define LAYER_Magic 3
 #define LAYER_Factory 4
 
-/* To deal with the situation where there is no Lower layer, to keep &lower happy */
-#ifndef LAYER_Lower
-#define LAYER_Lower 0
-#endif
-
 /* Generated input processors */
 / {
     input_processors {
@@ -444,12 +439,6 @@
     };
 };
 
-/* System behavior and macros */
-/ {
-    behaviors {
-        ZMK_TD_LAYER(lower, LAYER_Lower)
-    };
-};
 
 / {
     macros {
